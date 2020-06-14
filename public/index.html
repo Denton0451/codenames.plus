@@ -1,5 +1,5 @@
 <head>
-  <title>Codenames.plus</title>
+  <title>Boi Nevek</title>
   <!--meta-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -20,89 +20,87 @@
 
 <body>
   <p id='donate'>
-    <a id="donate-link" target='_blank' href="https://paypal.me/JoeMarchesi">Donate to help with hosting</a> 
+    <a id="donate-link" target='_blank' href="https://paypal.me/JoeMarchesi">Donátolj a készítőnek</a> 
     <a id='donate-hide'>[hide]</a>
   </p>
   <span id='server-stats' style='display: none'></span>
-  <button id='about-button'class='above'>About</button>
+  <button id='about-button'class='above'>Az oldal készítőjéről</button>
   <div id = 'about-window' style="display:none"class='above'>
     <div>
       <h2>Codenames.plus by Joooop</h3>
-      <a target='_blank' href="https://twitter.com/J0ooop">Follow me on Twitter @j0ooop</a>
-      <a target='_blank' href="https://paypal.me/JoeMarchesi">Donate to help with hosting</a>
-      <a target='_blank' href="https://joemar.me">Visit my Site: joemar.me</a>
-      <a target='_blank' href='https://github.com/Joooop/codenames.plus/tree/master'>View Source Code</a>
+      <a target='_blank' href="https://twitter.com/J0ooop">Kövesd Twitteren az oldal készítőjét: @j0ooop</a>
+      <a target='_blank' href="https://paypal.me/JoeMarchesi">Donátolj a készítőnek a hosztoláshoz</a>
+      <a target='_blank' href="https://joemar.me">Látogasd meg az oldal készítőjének weboldalát: joemar.me</a>
+      <a target='_blank' href='https://github.com/Joooop/codenames.plus/tree/master'>A weboldal eredeti foirráskódja</a>
       <br>
     </div>
-    <h3>How To Play</h4>
+    <h3>Játékszabályok</h4>
     <ul>
-      <li><i><b>TLDR;</b> In Codenames, two teams compete to see who can make contact with all of their agents first. Spymasters give one-word clues that can point to multiple words on the board. The spymaster also gives a number that corresponds to the number of words that clue applies to (Example: "Animal 3"). Their teammates try to guess words of the right color while avoiding those that belong to the opposing team. You are allowed to guess n + 1 times where n is the number the spymaster gives. Everyone wants to avoid the assassin. <span style='font-size: 10px'>No laming.</span></i></li>
+      <li><i><b>TLDR;</b> A Fedőnevekben két csapat küzd meg egymással abban, hogy melyikük találja meg a saját jelszavait először. A kémfőnökök egy szavas kulcsszavakat adnak meg, amik a játékmezőn található több szóra is utalhatnak, illetve azt is megmondják, hogy hány szóra utalnak a kulcsszavak (pl.: Gyümölcs 3). A csapattagjainak ki kell találnia ezeket a szavakat anélkül, hogy a másik csapat szavait találnék meg. Van egy bérgyilkos is a pályán, akit az egyik szó takar. Ezt mindkét csapatnak el kell kerülnie. <span style='font-size: 10px'>Ne csaljatok!</span></i></li>
       <br>
-      <li>Codenames is a game of guessing which code names (words) in a set are related to a hint-word given by another player.</li>
-      <li>Players split into two teams: red and blue. One player of each team is selected as the team's spymaster; the others are field operatives (Guessers).</li>
-      <li>Twenty-five code name cards, each bearing a word, are laid out in a 5×5 rectangular grid, in random order. A number of these words represent red agents, a number represent blue agents, one represents an assassin, and the others represent innocent bystanders.</li>
-      <li>The teams' spymasters are shown the 5×5 grid of 25 words with various colors, each corresponding to one of the code name cards on the table. Teams take turns. On each turn, the appropriate spymaster gives a verbal hint about the words on the respective cards. <b>Each hint may only consist of one single word and a number.</b> The spymaster gives a hint that is related to as many of the words on his/her own agents' cards as possible, but not to any others – lest they accidentally lead their team to choose a card representing an innocent bystander, a friendly agent, or the assassin. </li>
-      <li>The hint's word can be chosen freely, <b>as long as it is not (and does not contain) any of the words on the code name cards still showing at that time.</b> Code name cards are covered as guesses are made. </li>
-      <li>The hint's number tells the field operatives how many words in the grid are related to the word of the clue. <b>It also determines the maximum number of guesses the field operatives may make on that turn, which is the hint's number plus one.</b> Field operatives must make at least one guess per turn, risking a wrong guess and its consequences. They may also end their turn voluntarily at any point thereafter. </li>
-      <li>After a spymaster gives the hint with its word and number, their field operatives make guesses about which code name cards bear words related to the hint and point them out, one at a time. When a code name card is pointed out, the card reveals its color – blue agent, red agent, tan bystander, or the black assassin. If the assassin is pointed out, the game ends immediately, with the team who identified him losing. If an agent of the other team is pointed out, the turn ends immediately, and that other team is also one agent closer to winning. If an innocent bystander is pointed out, the turn simply ends. </li>
-      <li>The game ends when all of one team's agents are identified (winning the game for that team), or when one team has identified the assassin (losing the game). </li>
+      <li>A Boi Nevek egy szókitalálós játék két csapat számára.</li>
+      <li>A játékosokat két csapatba kell osztani: kék és piros csapatok. Csapatonként egy kémfőnököt kell kiválasztani aki majd a kulcsszavakat adja meg a csapata számára.</li>
+      <li>A 25 szó közül a kék színű kártyák a kék csapathoz, a piros színű kártyák a piros csapathoz tartoznak. Emelett van egy fekete kártya, ami a bérgyilkosé. A többi kártya ártatlan járókelőké.</li>
+      <li>A kémfőnökök látják az összes kártya színét. A csapatok felváltva találgathatnak. <b>Minden kulcsszó csak egy szóbol állhat és egy szám követheti (pl.: Konyha: 4).</b> A kémfőnök olyan kulcsszavakat igyekszik megadni, amik a lehető legtöbb jelszót lefedik. </li>
+      <li>A kulcsszavak szabadon kitalálhatóak, <b>de olyan szó nem lehet, ami a játékmezőn megtalálható és nem lett senki által kiválasztva még.</b></li>
+      <li>Az ügynököknek kötelező körönként legalább egy szóra tippelni, utána bármikor átadhatják a körüket, ha úgy gondolják több jelszót nem tudnak kitalálni. </li>
+      <li>Ha az ügynökök a másik csapat jelszavát vagy egy semleges szót jelölnek meg, akkor a körük azonnal véget ér és a másik csapat találgathat</li>
+      <li>A játéknak akkor van vége, ha az egyik csapat megtalálta az összes jelszavukat, vagy valamelyik csapat megtalálta a bérgyilkost (ebben az esetben a másik csapat nyer).</li>
     </ul>
   </div>
   <div id='afk-window' class='above'>
-    <h3>Are you still here?</h3>
-    <button id='not-afk'>Yes</button>
+    <h3>Itt vagy még?</h3>
+    <button id='not-afk'>Igen</button>
   </div>
   <div id='server-message' class='above'>
     <h3 id='message'></h3>
-    <button id='server-message-okay'>Okay</button>
+    <button id='server-message-okay'>Oké</button>
   </div>
   <div id="overlay"> </div>
   <div id="join-game">
-    <h1>Codenames.plus</h1>
+    <h1>Boi Nevek</h1>
     <form>
       <div class='join-input'>
-        <label for='join-nickname'>Nickname: </label>
+        <label for='join-nickname'>Játékosnév: </label>
         <input id='join-nickname' type='text' maxlength="10"></input>
       </div>
       <div class='join-input'>
-        <label for='join-room'>Room: </label>
+        <label for='join-room'>Szoba: </label>
         <input id='join-room' type='text' maxlength="10"></input>
       </div>
       <div class='join-input'>
-        <label for='join-password'>Password: </label>
+        <label for='join-password'>Jelszó: </label>
         <input id='join-password' type='password' maxlength="20"></input>
       </div>
     </form>
     <p id='error-message'> </p>
-    <button id='join-enter'>Enter Room</button>
-    <button id='join-create'>Create Room</button>
-    <p id="server-note">Due to the recent surge in popularity, the server is expereiencing strain during high traffic times on weekend nights (~1:00-5:00 UTC).<br><br>My apologies if you experience time-outs / freezing.</p>
-  </div>
+    <button id='join-enter'>Belépés a szobába</button>
+    <button id='join-create'>Szoba létrehozása</button>
   <div id="game" style="display:none">
-    <button id="leave-room">Leave Room</button>
+    <button id="leave-room">Szoba elhagyása</button>
     <div id='title'>
-        <h1>Codenames</h1>
+        <h1>Boi Nevek</h1>
     </div>
     <div id="content">
       <div id="left">
           <div id="players">
-            <h2>Players</h2>
+            <h2>Játékosok</h2>
             <div id='panel'>
-              <button id='join-red'>Join Red</button>
-              <button id='join-blue'>Join Blue</button>
+              <button id='join-red'>A piros csapathoz csatlakozás</button>
+              <button id='join-blue'>A kék csapathoz csatlakozás</button>
               <ul id="red-team"></ul>
               <ul id="blue-team"></ul>
               <ul id="undefined-list"></ul>
-              <button id='randomize-teams'>Randomize Teams</button>
+              <button id='randomize-teams'>Csapattagok összekavarása</button>
             </div>
           </div>
           <div id="card-packs">
-            <h2>Card Packs</h2>
-            <p id='word-pool'>Word Pool</p>
-            <button class='enabled' id="base-pack">Base Pack</button>
-            <button id="duet-pack">Duet Pack</button>
-            <button id="undercover-pack">Undercover Pack (NSFW)</button>
-            <button id="nlss-pack">NLSS Pack</button>
+            <h2>Szócsomagok</h2>
+            <p id='word-pool'>Szókészlet</p>
+            <button class='enabled' id="base-pack">Angol szavak</button>
+            <button id="duet-pack">Extra angol szavak</button>
+            <button id="undercover-pack">Angol szavak (NSFW)</button>
+            <button id="nlss-pack">Magyar szavak</button>
           </div>
           <div id="controls">
               <label id="timer-slider-label" for="timer">Timer Length</label>
@@ -113,7 +111,7 @@
         <div id="info">
           <p id='score'><span id='score-red'></span> - <span id='score-blue'></span></p>
           <h2 id='turn'><span id='status'></span> <span id='timer'></span></h2>
-          <button id='end-turn'>End Turn</button>
+          <button id='end-turn'>Kör befejezése</button>
         </div>
         <div id="board">
           <div class='row' id='row-1'>
@@ -154,18 +152,18 @@
         </div>
         <div id="toggles">
           <div class='toggle'>
-            <button id='role-guesser' disabled>Guesser</button>
-            <button id='role-spymaster'>Spymaster</button>
+            <button id='role-guesser' disabled>Ügynök</button>
+            <button id='role-spymaster'>Kémfőnök</button>
           </div> 
           <div class='toggle' id='player-difficulty'>
-            <button id='difficulty-normal' disabled>Normal</button>
-            <button id='difficulty-hard'>Hard</button>
+            <button id='difficulty-normal' disabled>Normál</button>
+            <button id='difficulty-hard'>Nehéz</button>
           </div>
           <div class='toggle'>
-              <button id="mode-casual"disabled>Casual</button>
-              <button id="mode-timed">Timed</button>
+              <button id="mode-casual"disabled>Normál</button>
+              <button id="mode-timed">Időzített</button>
             </div>
-          <button id='new-game'>New Game</button>
+          <button id='new-game'>Új játék</button>
         </div>
       </div>
       <div id="space"></div>
